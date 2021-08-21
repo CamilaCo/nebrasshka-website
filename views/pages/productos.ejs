@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/meta') %>
+   
+   
+    <title><%=title%></title>
+
+</head>
+<body class="b-c">
+    <header>
+        <%- include('../partials/nav') %>
+    </header>
+    <main class="body-p">
+        <section>
+            <div class="contenedor-2">
+                <div class="centrado" >
+                    <h5>Productos</h5>
+                    <% JSONBody.forEach(productos =>{ %>          
+                        <div class="card-2">
+                            <img src="<%= productos.img %>" class="card-p" alt="<%= productos.nombre %>">                        
+                            <div class="card-body">
+                            <h5 class="title-card" ><%= productos.nombre %></h5>
+                            <p class="p-card"><%= productos.precio %></p>
+                            </div>
+                        </div>
+                    <% }) %> 
+                </div>
+            </div>
+
+            
+        </section>
+    </main>
+    <%- include('../partials/footer') %>
+</body>
+</html>

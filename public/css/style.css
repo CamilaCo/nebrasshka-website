@@ -1,0 +1,524 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: gray;
+    font-family:'Open Sans', sans-serif;
+    font-size: 14px;   
+    
+    /* background-color: rgb(106, 106, 124); */
+}
+
+.header{
+    background-image: url("../img/heard\ .png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   
+}
+.logo{
+    width: 60px;
+}
+.nav-mobile{
+    display: none;
+}
+.nav-1{
+    padding: 50px 0px;
+}
+/* .nav{
+    margin: 50px auto;   
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+} */
+.menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+    justify-content: center;
+    flex-direction: row;
+    /* padding: 50px; */
+}
+.menu-link{
+    display: block;
+    text-decoration: none;
+    padding: 15px 20px;
+    color: rgb(255, 255, 255);
+    font-family: "Playfair Display", "Times New Roman", Times, serif;
+    font-size: 20px;
+  
+}
+/* cuando paso por arriba le doy color */
+.nav-menu-link:hover{
+    color: #ff9191;
+    transition: all 0.3s;
+}
+/* Sub menu */
+.submenu{
+    position: absolute;
+    background-color:white;
+    width: 120px;
+    /* display: none para ocultarlo */
+    display: none;
+    list-style: none;
+
+}
+/* cuando paso por arriba al submenu lo pongo en bloque */
+.menu li:hover .submenu{
+    display: block;
+}
+.submenu-link{
+    display: block;    
+    padding: 15px;
+    color:#cfdbd5;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+.caret{
+    visibility: hidden;
+}
+/* Acá comienxa los titulos */
+.contenedor-titulos{
+    text-align: center;
+    color: white;
+    padding: 220px 0px 100px;
+    margin: 0px 100px;
+}
+.titulo-header{
+    font-family: "Playfair Display", "Times New Roman", Times, serif;
+    font-size: 72px;    
+}
+.parrafos{
+    margin: 38px 0px 0px;
+    padding: 20px 20px 50px;
+    line-height: 25px;
+}
+.btn{
+    background-color: #ff9191;
+    color: white;
+    padding: 13px 33px;
+    text-decoration: none;
+    border: none;
+    border-radius: 40px;
+    margin: 50px 0px 0px;
+}
+.btn:hover{
+    background-color: black;
+}  
+/* Acá comienza main */
+/* Primera seccion */
+.contenedor-seccion{
+    display: flex;
+    /* width: 100%; */
+    padding: 100px 0px;
+    background: #f7f6ee;
+}
+
+.box1{
+    /* max-width: 60%; */
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    
+}
+.box2{
+    /* max-width: 40%;     */
+    max-width: 50%;
+    justify-content: left;
+    
+}
+
+.box-img{
+    max-width: 33,33%;
+    padding: 0px 20px 0px 0px;
+}
+.img{
+    max-width: 100%;
+}
+.parrafo-box{
+    padding: 20px 0px 50px;
+    line-height:25px;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    /* font-size: 17px; */
+}    
+.card-box2{
+    padding: 0px 10px 20px; 
+   
+}
+.titulo-box{
+    font-family: "Playfair Display", "Times New Roman", Times, serif;
+    font-size: 28px;
+    color: #242423;
+}
+
+/* segunda seccion */
+.contenedor-seccion1{
+    display: flex;
+    background: white;
+}
+.box-card{
+    background-image: url('../img/Fondo\ div.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 60%;
+}
+.box-card-fila{
+    display: flex;
+}
+.card{
+    max-width: 50%;
+    text-align: center;
+    border: 1px solid rgb(231, 224, 224);
+    padding: 40px 30px;
+}
+.box-card-derecha{
+    padding: 30px 30px 30px 0px;
+}
+.box-card-izquierda{
+    padding: 30px 0px 30px 30px;
+}
+.parrafo-card{
+    padding-top:20px ;
+}
+.card-box2-pad{
+    padding: 20px;
+}
+.link-card{
+    text-decoration: none;
+    font-family:"Playfair Display", "Times New Roman", Times, serif;
+    color: white;
+}    
+.link-card:hover{
+    color: #ff9191;
+    transition: all 0.3s;
+}
+.link-p{
+    padding: 30px 0px 0px 0px;
+}
+
+.caja{
+    display: flex;
+    width: 100%;
+    padding: 10px 0px 0px;
+}
+.caja-foot{
+    /* max-width: 33.33%; */
+    width: 33.33%;
+    padding: 10px;
+}
+.titulo-foter{
+    font-size: 15px;
+}
+.flex{
+  display: flex;
+  margin: 10px 0px
+  
+}
+.caja-fotter{
+    width: 50%;    
+}
+.p-fotter{
+    font-style: italic;
+    padding: 10px;
+}
+
+
+.ul-fotter{
+    list-style: none;
+}
+.link-fotter{
+    text-decoration: none;
+    font-family: "Playfair Display", "Times New Roman", Times, serif;
+    line-height: 25px;
+    color: grey;
+}
+.link-fotter:hover{
+    color: #ff9191;
+    transition: all 0.3s;
+}
+.divider{
+    border: 1px solid rgb(184, 184, 184);
+}
+.icon{
+    font-size: 25px;
+    color: grey;
+    padding: 20px;
+}
+
+/*---> Pag Productos <----*/
+.nav-2{
+    padding: 10px;
+    background-color: #ebb7b7;
+    position: fixed;
+    left: 0%;
+    width: 100%;
+}
+.body-p{
+    padding-top: 80px;
+}
+.b-c{
+    background-color: #f5f5f5;
+}
+.contenedor-2{
+    max-width: 1200px;
+    margin: 0 auto;
+    min-height: 500px;
+}
+.card-2{
+    width: 25%;
+    display: inline-block ;
+    text-align: center;
+    border: 1px solid rgb(231, 224, 224);
+    /* padding: 40px 30px; */
+    margin: 30px;
+}
+.card-p{
+    max-width: 100%;
+}
+.flex{
+    display: flex;
+}
+/* div{
+    border: 1px solid black;
+} */
+.centrado{
+    text-align: center;
+}
+.title-card{
+    color: black;  
+}
+.p-card{
+    color: black;
+    font-weight: bolder
+}
+.card-body{
+    font-size: 20px;
+}
+/*------>Page de contacto <-----*/
+/* .form-registro{
+    width: 400px;
+    background-color: cadetblue;
+    padding: 30px;
+    margin: auto;
+    border-radius:4px ;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+  
+} */
+.control{
+    width: 100%;
+    background:salmon ;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border:1px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+.administrador{
+    width: 400px;
+    background-color: cadetblue;
+    padding: 30px;
+    margin:20px auto;
+    border-radius:4px ;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+.contenedor-foto{
+    max-width: 100%;
+    height: 150px;
+}
+.title-pro{
+    padding: 50px 0px 20px 0px
+}
+
+@media(max-width:1200px){
+    .contenedor{
+        max-width: 1200px;
+        margin: 0 auto;
+       
+    }
+    .box2{
+        max-width: 40%;      
+    }
+    .box1{
+        max-width: 60%;
+    }
+}
+
+@media(max-width:992px){
+    body{
+        /* agrego un paddin para que la barra de navegacion se quede fija  */
+        /* padding-top: 80px; */
+        padding-top:none;
+        background-color: #f7f6ee;
+    }
+    .nombre{
+        font-family: PT Serif;
+       
+    }
+    .nav-mobile{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color:white;
+    }
+    .img{
+        width: 240px;
+        /* border: 1px solid black; */
+        padding: 20px;
+    }
+    .menu{
+        display: none;
+        width: 80%;
+        background: white;
+    }
+    .hamburguesa {
+        display: block;
+        color: black;
+        padding: 20px;
+        font-size: 35px;  
+        /* overflow: hidden;     */
+    }
+    .nav-1{
+        display: flex;
+        flex-direction: column;
+        /* Agrego Cami */
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding: 0px 0px 0px 0px;
+    }
+    .showMenu{
+        display: block;
+    }
+   
+    .nav-menu-item{
+        display: block;
+        /* border-bottom: 1px solid rgba(17, 16, 16, 0.5); */
+
+    }
+    .nav-menu-link{
+        display: block;
+        font-size: 15px;
+    }
+    header nav ul li:hover .children{
+        display: none;
+    }
+    header nav ul li .children{
+        width: 100%;
+        /* con position: relativ lo que hacemos es que los elementos se desplacen hacia abajo cuando desplegamos el submenu y no se puerpongan */
+        position: relative;
+    }
+    .nav-submenu-link{
+        margin-left:20px;
+    }
+    .nav-menu{
+        flex-direction: column;
+        
+    }
+    header nav ul li .caret{
+        /* acá hago aparecer el icono */
+        visibility: visible;
+        /* float:right para poner la flechita a la derecha */
+        float: right;
+    }
+    .menu-link{
+       color: black      
+    }   
+    .nav-menu-item:hover{
+        background-color: #ff9191;
+        transition: all 0.3s;
+    }
+    .nav-menu-link:hover{
+        color: white;
+        transition: all 0.3s;
+    }
+    .submenu-link:hover{
+        background-color: #ff9191;
+        transition: all 0.3s;
+    }
+    .logo{
+        display: none;
+    }
+    .nav-2{
+        padding: none;
+        background-color: #ffffff;
+    }
+
+}
+@media(max-width:881px){
+
+    .contenedor-seccion{
+        /* display:block; */
+        flex-direction: column-reverse;
+        padding: 0px 0px;
+    }
+    .contenedor-seccion1{
+        display: block;
+       
+    }
+    .box2{
+        max-width: 100%;    
+        text-align: center;
+        padding: 20px 0px;
+        background-color: white;
+
+    }
+    .box1{
+        max-width: 100%;
+        padding: 0px 0px 30px;
+    }    
+    .card-box2{
+        margin: 10px;
+       
+    }
+    .box-img{
+        padding: 0px 0px 0px 0px;
+    }
+    .box-img2{
+        padding: 0px 10px;
+    }
+    .color-box2{
+        background-color: #f7f6ee;
+    }    
+    .box-card{
+        max-width: 100%;
+    }
+}
+@media(max-width:576px){
+    .box-card-fila{
+        display: block;      
+    }
+   
+    .card{
+        max-width: 100%;
+        
+    }
+
+    .contenedor-titulos{
+        text-align: center;
+        color: white;
+        padding: 50px 30px 50px;
+        margin: 0px 0px;
+    }
+
+    .titulo-header{      
+        font-size: 34px;    
+    }
+    .parrafos{
+        margin: 20px 0px 0px;
+    }
+    .caja{
+        display: block;
+    }
+    .caja-foot{
+        width: 100%;
+        text-align: center;
+    }
+    
+}
