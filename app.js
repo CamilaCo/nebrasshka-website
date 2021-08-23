@@ -36,22 +36,24 @@ app.get('/desproduc',(req,res) => {
         title: `${title} | Admin'`,
     })
 })
-// app.get('/productos/:categoria',(req,res) => {
-//     Con 'params' recivo el parametro que le estoy pasando de categoria
-//     const categoria = req.params.categoria
-//     data.getAllProductos(categoria,(error,data) => {
-//         if (error){
-//             return res.send({
-//                 error
-//             })
-//         }
-//         const JSONBody = JSON.parse(data);
-//         return res.render('pages/productos',{
-//             title,
-//             JSONBody
-//         });
-//     })
-// })
+app.get('/productos/:categoria',(req,res) => {
+    // Con 'params' recivo el parametro que le estoy pasando de categoria
+    const categoria = req.params.categoria
+    data.getAllCategoria(categoria,(error,data) => {
+        if (error){
+            return res.send({
+                error
+            })
+        }
+        const JSONBody = JSON.parse(data);
+        // console.log(JSONBody)
+        return res.render('pages/productos',{
+            title,
+            JSONBody
+
+        });
+    })
+})
 app.get('/productos',(req,res) => {
     data.getAllProductos((error,data) => {
         if (error){
