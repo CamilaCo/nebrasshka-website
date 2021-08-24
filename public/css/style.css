@@ -456,6 +456,9 @@ body{
         padding: none;
         background-color: #ffffff;
     }
+    /* .menu li:hover .submenu{
+        display: none;
+    }                             */
 
 }
 @media(max-width:881px){
@@ -516,6 +519,9 @@ body{
 
     .titulo-header{      
         font-size: 34px;    
+    }
+    .titulo-principal{
+        font-size: 44px;
     }
     .parrafos{
         margin: 20px 0px 0px;
